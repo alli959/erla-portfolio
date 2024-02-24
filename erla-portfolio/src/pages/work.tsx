@@ -19,7 +19,9 @@ about changes in myself and self growth. This work is a three-dimensional work i
     const text2 = `From my perspective Ugly art can be something that is just nonsense, something that doesn't fit or fit into the environment. I think ugly art can also be colors that don't match in a work and something that doesn't make sense to people. I think ugly art can be works that are dirty, scary, unattractive, or something that has no thought or creativity put into it. Beautiful art can be something that immediately catches your attention, something that reminds you of something beautiful around you, like a beautiful environment, beautiful colors or light. For me, beautiful art can be colors that fit together and especially into the environment. Beautiful art can be an idea that comes from a person and the person conveys it in a neat way. Beautiful and ugly art can be very personal in my opinion, maybe I think something is beautiful that you think is ugly or vice versa. Beauty to me can be something I only see in a dream, something that is evident in a soothing, bright way. When I think of beauty, I think of something that illuminates the environment, something that you immediately notice and are puzzled by at first glance. Beauty to me is something I want to have or have close to me, whether it's an object, art, work or person. Something that warms me and makes me feel good and not feel bad when I look at it.`;
 
 
-
+const text3 = `The item i decided to use for this project is a vase that has been in storage for a long time without use. The vase is transparent and made of glass. I was thinking a lot about how I could give this it a new role. I first wanted to change the look, color and texture, but it wasn't exactly a new purpose. From that, I started wanting to make a lamp or a light, so the vase would become a lamp.  None of these ideas of mine appealed directly to me and made me perfectly happy. I sat and turned the vase in many ways and ended up getting an idea when I turned it upside down. I envisioned a lookout tower that would be consistent for the shape of the vase. This observation tower would also be a building and you could walk in a circle around the top floor. I would like to learn how to make interior spaces functional, safe and beautiful for buildings and for the user to enjoy himself as much as possible. 
+I think views are very important when you enter buildings or spaces, whether they are high or low. If the view around you is beautiful, I think it makes the interior space much more beautiful. When you have a beautiful overview of the environment around you, you feel good and it is important to feel good in your environment. A view gives you so much, sunset, sunset, natural beauty, glory of colors, landscape and so much more.
+`
 
 
     return (
@@ -32,10 +34,19 @@ about changes in myself and self growth. This work is a three-dimensional work i
                         <Heading>Personal and Conceptual Projects</Heading>
 
                         <ImageTextCard imagePos='down' imgSrc='/picture1.jpg' text={text1} title='Standing Up on My Own Two Feet'></ImageTextCard>
+                        <HeadingThree>Beautiful and ugly art - Project with paper, making it ugly and beautiful</HeadingThree>
+                        <Paragraph>${text2}</Paragraph>
+                        <ImageGridTwoByTwo>
+                          <GridImage src="/picture2.jpg" alt="Picture 2" />
+                          <GridImage src="/picture3.jpg" alt="Picture 3" />
+                        </ImageGridTwoByTwo>
+                        <HeadingThree>An Old Thing Gets a New Life</HeadingThree>
+                        <Paragraph>${text3}</Paragraph>
+                        <ImageGridTwoByTwo>
+                          <GridImage src="/picture4.jpg"></GridImage>
+                          <GridImage src="/picture5.png"></GridImage>
+                        </ImageGridTwoByTwo>
 
-
-                        <h3>Beautiful and Ugly Art</h3>
-                        <h3>An Old Thing Gets a New Life</h3>
 
                     </Section>
 
@@ -129,6 +140,11 @@ export const GridImage = styled.img`
   border-radius: 8px;
 `;
 
+export const HeadingThree = styled.h2`
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+`;
 
 export const Paragraph = styled.p`
   color: #555;

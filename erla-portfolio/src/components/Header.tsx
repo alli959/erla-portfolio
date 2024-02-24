@@ -26,7 +26,7 @@ export const Nav = styled.nav`
 `;
 
 // Adjusted StyledLink to be a div or another appropriate element if necessary
-export const StyledLink = styled.a`
+export const StyledLink = styled.div`
   margin-right: 15px;
   cursor: pointer;
   color: ${({ theme }) => theme.colors.headerText};

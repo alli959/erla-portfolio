@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/codemod": "^14.1.0",
     "@next/font": "^14.1.0",
     "babel-plugin-styled-components": "^2.1.4",
     "dlx": "^0.2.1",

@@ -10,6 +10,7 @@ export default function About() {
                 title="My Story"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum."
                 imgSrc="/path-to-about-image.jpg" // Replace with the path to your image
+                imagePos="left"
             />
             {/* Add more about me content, biography, etc. here */}
         </Layout>

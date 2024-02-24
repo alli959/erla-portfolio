@@ -31,7 +31,7 @@ const NavItem = styled.li`
   padding: 10px 20px; // Add padding for clickable area
 `;
 
-const NavLink = styled.a`
+const NavLink = styled.div`
   color: black;
   text-decoration: none;
   position: relative; // Position relative for the underline effect

@@ -1,14 +1,17 @@
 import Layout from '../components/Layout';
 import styled from 'styled-components';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Link from 'next/link';
 
 
 // Ensure you have the correct path to your image file
 import artistPhoto from '../../public/erla-working.png';
+import React from 'react';
 
 
 export default function Index() {
+  const lazyRoot = React.useRef(null)
+
   return (
     <Layout>
       <HeroSection>
@@ -18,7 +21,7 @@ export default function Index() {
             alt="Artist at work"
             layout="fill"
             objectFit="cover"
-          />
+            priority />
         </ImageContainer>
         <TextContainer>
           <Title>Welcome to My Fashion Portfolio</Title>

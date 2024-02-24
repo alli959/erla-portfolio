@@ -1,18 +1,24 @@
 import styled from 'styled-components';
 
 interface ImageTextCardProps {
-    title: string;
-    text: string;
-    imgSrc: string; // This should be the path to your image
+  title: string;
+  text: string;
+  imgSrc: string;
+  imagePos: "up" | "down" | "left" | "right"; // Assuming this is the custom prop you want to include
 }
 
-const CardContainer = styled.div`
+const CardContainer = styled.div<ImageTextCardProps>`
   margin: 2rem auto;
   width: 100%;
-  max-width: 500px; // Adjust the width as necessary
+  max-width: 800px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
+  display: flex;
+  flex-direction: ${({ imagePos }) =>
+    imagePos === 'left' || imagePos === 'right' ? 'row' : 'column'};
+  ${({ imagePos }) => (imagePos === 'right' ? 'flex-direction: row-reverse;' : '')}
+  ${({ imagePos }) => (imagePos === 'down' ? 'flex-direction: column-reverse;' : '')}
 `;
 
 const CardImage = styled.img`
@@ -35,12 +41,12 @@ const CardText = styled.p`
   color: #555;
 `;
 
-export const ImageTextCard = ({ title, text, imgSrc }: ImageTextCardProps) => (
-    <CardContainer>
-        <CardImage src={imgSrc} alt={title} />
-        <CardContent>
-            <CardTitle>{title}</CardTitle>
-            <CardText>{text}</CardText>
-        </CardContent>
-    </CardContainer>
+export const ImageTextCard = ({ title, text, imgSrc, imagePos = 'up' }: ImageTextCardProps) => (
+  <CardContainer title={title} text={text} imgSrc={imgSrc} imagePos={imagePos}>
+    <CardImage src={imgSrc} alt={title} />
+    <CardContent>
+      <CardTitle>{title}</CardTitle>
+      <CardText>{text}</CardText>
+    </CardContent>
+  </CardContainer>
 );

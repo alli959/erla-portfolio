@@ -11,7 +11,6 @@ const CardContainer = styled.div<ImageTextCardProps>`
   margin: 2rem auto;
   width: 100%;
   max-width: 800px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
   display: flex;
@@ -32,7 +31,7 @@ const CardContent = styled.div`
   text-align: center;
 `;
 
-const CardTitle = styled.h2`
+const CardTitle = styled.h3`
   margin: 0.5rem 0;
   color: #333;
 `;

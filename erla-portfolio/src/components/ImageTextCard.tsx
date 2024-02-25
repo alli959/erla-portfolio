@@ -9,8 +9,7 @@ interface ImageTextCardProps {
 
 const CardContainer = styled.div<ImageTextCardProps>`
   margin: 2rem auto;
-  width: 100%;
-  max-width: 800px;
+  max-width: 80%;
   border-radius: 8px;
   overflow: hidden;
   display: flex;
@@ -37,7 +36,7 @@ const CardTitle = styled.h3`
 `;
 
 const CardText = styled.p`
-  color: #555;
+   ${props => props.theme.paragraph}
 `;
 
 export const ImageTextCard = ({ title, text, imgSrc, imagePos = 'up' }: ImageTextCardProps) => (

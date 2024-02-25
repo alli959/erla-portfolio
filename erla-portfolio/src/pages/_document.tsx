@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
@@ -37,6 +38,8 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <Script src="https://player.vimeo.com/api/player.js" strategy="beforeInteractive" />
+
         </body>
       </Html>
     )

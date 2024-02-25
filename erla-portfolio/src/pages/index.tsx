@@ -10,6 +10,7 @@ import React from 'react';
 
 
 export default function Index() {
+  const indexText = `Hey there! Welcome to my fashion playground where old jeans transform into trendy bags and overlooked vases become eye-catching watchtowers. My art dances between "ugly" and "beautiful," creating pieces and places that resonate. It's all about sustainable chic and meaningful creation. Most of my projects are recent, but I'm just getting started. Take a look at my latest sketches, upcycled treasures, and designs that narrate my story as I gear up for an exciting future in fashion.`
   const lazyRoot = React.useRef(null)
 
   return (
@@ -26,12 +27,7 @@ export default function Index() {
         <TextContainer>
           <Title>Welcome to My Fashion Portfolio</Title>
           <BioText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            {indexText}
           </BioText>
           <ButtonContainer>
             <LinkButton href="/about">About Me</LinkButton>
@@ -72,13 +68,7 @@ const Title = styled.h1`
 `;
 
 const BioText = styled.p`
-  color: #555;
-  font-size: 1.1em; // Adjust size as necessary
-  margin-bottom: 30px;
-  width: 60%;
-  margin: 0 auto; // Center the text
-  line-height: 1.6; // Adjust line height as necessary
-  margin-bottom: 30px;
+ ${props => props.theme.paragraph}
 `;
 
 const ButtonContainer = styled.div`

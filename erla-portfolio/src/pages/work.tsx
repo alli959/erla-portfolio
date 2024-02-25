@@ -2,30 +2,36 @@ import Layout from '../components/Layout';
 import styled from 'styled-components';
 import FixedNavigation from '../components/FixedNavigation';
 import { ImageTextCard } from '@/components/ImageTextCard';
+import { Component } from 'react';
+import Head from 'next/head';
+import Script from 'next/script';
+
+import { createGlobalStyle } from 'styled-components';
+
+
+const GlobalStyle = createGlobalStyle`
+  .vp-placeholder.vp-placeholder-fadeout {
+    margin-top: 0 !important;
+  }
+`;
 
 
 export default function Work() {
   const personal_project_text = `
-    This project was about how will my memories from the season 2021 be in 40 years.
-Short summary of the project was making a piece based on memories. I started by doing a mind 
-map and an analysis of myself as I immediately knew that my project would be personal. The project is 
-about changes in myself and self growth. This work is a three-dimensional work in which a great deal of personal intention takes place.
- Tearing the meterial down was a good outlet for my feelings. When I get older and look back, I will always remember these times that I am experiencing today.
-  Two years ago I couldn't see anything around me and felt like I would never get out of the situation I was in. I felt like everything was collapsing around me 
-  as seen in my obsession with the building which I also associate with my interest in architecture. I decided to also work with wire as I see myself slowly standing up on my own two feet.
+    The purpose of this project was to explore my memories of the 2021 season throughout a 40-year period. In a nutshell, the project involved creating a piece inspired by recollections. I knew right away that my project would be personal, so I began by creating a thought map and completing an analysis of myself. The project is about personal development and self-improvement. There is a lot of personal intention in this three-dimensional piece of art. I found that tearing the meterial down helped me to release my emotions. I will always remember these things I am going through now when I'm older and look back. I felt hopeless and unable to see my way out of the predicament I found myself in two years ago. I relate my infatuation with the structure with my feeling that everything was crumbling around me, as seen by my passion in architecture. I chose to work with wire as well because I could see myself eventually getting up on my own two feet.
     `;
 
 
-  const beautiful_and_ugly_art_text = `From my perspective Ugly art can be something that is just nonsense, something that doesn't fit or fit into the environment. I think ugly art can also be colors that don't match in a work and something that doesn't make sense to people. I think ugly art can be works that are dirty, scary, unattractive, or something that has no thought or creativity put into it. Beautiful art can be something that immediately catches your attention, something that reminds you of something beautiful around you, like a beautiful environment, beautiful colors or light. For me, beautiful art can be colors that fit together and especially into the environment. Beautiful art can be an idea that comes from a person and the person conveys it in a neat way. Beautiful and ugly art can be very personal in my opinion, maybe I think something is beautiful that you think is ugly or vice versa. Beauty to me can be something I only see in a dream, something that is evident in a soothing, bright way. When I think of beauty, I think of something that illuminates the environment, something that you immediately notice and are puzzled by at first glance. Beauty to me is something I want to have or have close to me, whether it's an object, art, work or person. Something that warms me and makes me feel good and not feel bad when I look at it.`;
+  const beautiful_and_ugly_art_text = `In my opinion, absurd art can be anything that is out of place or doesn't blend in with the surroundings. In my opinion, unattractive art can also include things that are confusing to viewers and colours that don't go together. Ugly art, in my opinion, can include pieces that lack imagination or thoughtfulness or that are unpleasant, frightening, or disgusting.
+Beautiful art can be something that draws your eye right away or that evokes memories of something lovely in your surroundings, such as a stunning setting, stunning colours, or stunning light. Colours that go well together and especially with their surroundings can make for excellent art, in my opinion. An concept that a person has and cleverly expresses can be considered beautiful art. I believe that what I find beautiful may not be what you find ugly, and vice versa. Beautiful and ugly art can be quite subjective. To me, beauty might be something that is obvious in a bright, calming way or something I can only see in dreams. When I think of beauty, I picture something that brightens the surrounding space, something that catches your eye right away and confounds you right away. Whether it's an object, piece of art, person, or something else entirely, beauty is something I aspire to possess or be around. Something that, when I look at it, cheers me up, makes me feel good, and keeps me from feeling awful.
+`;
 
 
-  const an_old_thing_gets_a_new_life_text = `The item i decided to use for this project is a vase that has been in storage for a long time without use. The vase is transparent and made of glass. I was thinking a lot about how I could give this it a new role. I first wanted to change the look, color and texture, but it wasn't exactly a new purpose. From that, I started wanting to make a lamp or a light, so the vase would become a lamp.  None of these ideas of mine appealed directly to me and made me perfectly happy. I sat and turned the vase in many ways and ended up getting an idea when I turned it upside down. I envisioned a lookout tower that would be consistent for the shape of the vase. This observation tower would also be a building and you could walk in a circle around the top floor. I would like to learn how to make interior spaces functional, safe and beautiful for buildings and for the user to enjoy himself as much as possible. 
-I think views are very important when you enter buildings or spaces, whether they are high or low. If the view around you is beautiful, I think it makes the interior space much more beautiful. When you have a beautiful overview of the environment around you, you feel good and it is important to feel good in your environment. A view gives you so much, sunset, sunset, natural beauty, glory of colors, landscape and so much more.
+  const an_old_thing_gets_a_new_life_text = `I've chosen to utilise a vase that has been sitting in storage unopened for a while for this project. The vase is composed of glass and is translucent. I spent a lot of time considering how I could give this a new purpose. While it wasn't precisely a new purpose, my initial goal was to alter the appearance, colour, and texture. I sat and rotated the vase a number of ways until I turned it upside down and had an idea. My idea was for a watchtower that would maintain the vase's shape. Not only would this observation tower be a structure, but you could also stroll around its top floor in a circle. My goal is to get knowledge on creating interior spaces that are safe, elegant, and conducive to maximum user enjoyment for buildings. Whether a building or area is high or low, views are, in my opinion, quite significant. I believe an interior area is enhanced greatly by a lovely vista surrounding it. It's crucial to feel comfortable in your surroundings, and you feel good when you have a great perspective on your surroundings. A view offers a plethora of benefits, including breathtaking sunsets, unspoiled landscapes, vibrant colours, and much more.
 `
 
-  const upcycling_jeans_to_a_bag_text = `I found this project incredibly fun as we went exactly the way that I am very interested in, renewing something and giving it a new life.  I started this project by scrolling down Pinterest for a good while looking for inspiration and something I wanted to do. After that I found materials at home that I wanted to use. I decided to sew a bag I saw on Pinterest but make it my own style and I think it would look cool. I found the pattern on the Etsy website and used it to make the bag. I printed out the pattern, glued it together and read the instructions carefully. I found some brown pants that I had in a closet that I had stopped wearing and I needed other pants to match these, so I went to a thrift store and found some really nice white pants to use. I envisioned the overall look of the bag from these two pairs of jeans and felt that white and brown are very suitable for me and the clothes I have.`;
+  const upcycling_jeans_to_a_bag_text = `This project was so much joy for me because it went in the exact direction that interests me the most—reviving and revitalising something.  I spent a large deal of time browsing Pinterest before beginning this project in search of ideas and projects I wanted to complete. After that, I discovered supplies I wanted to utilise at home. I made the decision to create a bag I saw on Pinterest in my own unique way since I thought it would look awesome. I made the bag using the pattern I got from the Etsy website. I carefully studied the instructions, printed out the pattern, and glued it together. I went to a thrift store and got some pretty lovely white pants to utilise because I had some brown pants in a closet that I had stopped wearing and I needed more pants to match. I thought that white and brown would go really well with the items I had and how these two pairs of pants would appear together as a whole.`;
 
-  const my_first_teledimensional_projects_text = `I was very excited to start this project as I have always been interested in architecture and interior design. I started by drawing a room in my house and then I drew a chair that I thought would fit into the room. I then drew the chair in 3D.......`;
   const giometria_text = `This project all started with learning about the Golden Ratio. The main prjoject took over after that, where we were to draw the gold pattern and use those shapes together with one spit to create some kind of structure or Architecture. We were not allowed to use more than this data to begin with. When the work was ready with the Golden profile and the spit, we took pictures of the work in colored lights. It was fun to see how the work changed after how the description was. After that, everything was free and we could do what we wanted with our work.`;
 
 
@@ -41,10 +47,43 @@ I think views are very important when you enter buildings or spaces, whether the
 
         <FixedNavigation />
         <main>
+          <Section id="art-and-technology">
+            <Heading>Art and Technology</Heading>
+            <HeadingThree>GÍOMETRIA</HeadingThree>
+            <Paragraph>{giometria_text}</Paragraph>
+            <HeadingThree>RGB Photos</HeadingThree>
+            <ImageGridTwoByTwo>
+              <GridImage src="/rgb_photos_image_2.jpg"></GridImage>
+            </ImageGridTwoByTwo>
+            <ImageGridThreeByThree>
+              <GridImage src="/rgb_photos_image_3.jpg"></GridImage>
+              <GridImage src="/rgb_photos_image_4.jpg"></GridImage>
+              <GridImage src="/rgb_photos_image_1.jpg"></GridImage>
+            </ImageGridThreeByThree>
+            <HeadingThree>My First Laser Project</HeadingThree>
+            <ImageGridTwoByTwo>
+              <GridImage src="/my_first_laser_project_image_1.jpg"></GridImage>
+            </ImageGridTwoByTwo>
+            <HeadingThree>Final Project with Changes</HeadingThree>
+            <ImageGridThreeByThree>
+              <GridImage src="/final_project_with_changes_image_4.jpg"></GridImage>
+              <GridImage src="/final_project_with_changes_image_3.jpg"></GridImage>
+              <GridImage></GridImage>
+              <GridImage src="/final_project_with_changes_image_1.jpg"></GridImage>
+              <GridImage src="/final_project_with_changes_image_2.jpg"></GridImage>
+              <GridImage></GridImage>
+              <GridImage src="/final_project_with_changes_image_5.jpg"></GridImage>
+              <GridImage src="/final_project_with_changes_image_6.jpg"></GridImage>
+              <GridImage></GridImage>
+            </ImageGridThreeByThree>
+          </Section>
           <Section id="personal-and-conceptual">
             <Heading>Personal and Conceptual Projects</Heading>
-
-            <ImageTextCard imagePos='down' imgSrc='/personal_project_img_1.jpg' text={personal_project_text} title='Standing Up on My Own Two Feet'></ImageTextCard>
+            <HeadingThree>Personal Project - Standing Up on My Own Two Feet</HeadingThree>
+            <Paragraph>{personal_project_text}</Paragraph>
+            <ImageGridOneByOne>
+              <GridImage src="/personal_project_img_1.jpg"></GridImage>
+            </ImageGridOneByOne>
             <HeadingThree>Beautiful and ugly art - Project with paper, making it ugly and beautiful</HeadingThree>
             <Paragraph>{beautiful_and_ugly_art_text}</Paragraph>
             <ImageGridTwoByTwo>
@@ -66,14 +105,14 @@ I think views are very important when you enter buildings or spaces, whether the
             <HeadingThree>Upcycling Jeans to a Bag</HeadingThree>
             <Paragraph>{upcycling_jeans_to_a_bag_text}</Paragraph>
             <ImageGridTwoByTwo>
+              <GridImage src="/upcycling_jeans_to_a_bag_image_5.jpg"></GridImage>
+            </ImageGridTwoByTwo>
+            <ImageGridThreeByThree>
               <GridImage src="/upcycling_jeans_to_a_bag_image_1.jpg"></GridImage>
               <GridImage src="/upcycling_jeans_to_a_bag_image_2.jpg"></GridImage>
               <GridImage src="/upcycling_jeans_to_a_bag_image_3.jpg"></GridImage>
               <GridImage src="/upcycling_jeans_to_a_bag_image_4.jpg"></GridImage>
-            </ImageGridTwoByTwo>
-            <ImageGridOneByOne>
-              <GridImage src="/upcycling_jeans_to_a_bag_image_5.jpg"></GridImage>
-            </ImageGridOneByOne>
+            </ImageGridThreeByThree>
             <HeadingThree>Handbag Knitted Out of Old Thrifted Jeans</HeadingThree>
             <ImageGridTwoByTwo>
               <GridImage src="/handbag_knitted_out_of_old_thirfted_jeans_image_1.jpg"></GridImage>
@@ -86,78 +125,49 @@ I think views are very important when you enter buildings or spaces, whether the
             </ImageGridTwoByTwo>
           </Section>
 
-          <Section id="spatial-and-dimensional">
-            <Heading>Spatial and Dimensional Explorations</Heading>
-            <HeadingThree>My First Teledimensional Projects</HeadingThree>
-            <Paragraph>{my_first_teledimensional_projects_text}</Paragraph>
+          <Section id="my-first-teledimensional-projects">
+            <Heading>My First Teledimensional Projects</Heading>
             <HeadingThree>The Honey Chair</HeadingThree>
-            <ImageGridOneByOne>
+            <ImageGridThreeByThree>
+              <GridImage></GridImage>
               <GridImage src="/the_honey_chair_image_1.png"></GridImage>
-            </ImageGridOneByOne>
+            </ImageGridThreeByThree>
             <HeadingThree>My Bedroom Drawing</HeadingThree>
-            <ImageGridOneByOne>
+            <ImageGridThreeByThree>
+              <GridImage></GridImage>
               <GridImage src="/my_bedroom_drawing_image_1.png"></GridImage>
-            </ImageGridOneByOne>
+            </ImageGridThreeByThree>
             <HeadingThree>My School Hall</HeadingThree>
-            <ImageGridOneByOne>
+            <ImageGridThreeByThree>
+              <GridImage></GridImage>
               <GridImage src="/my_school_hall_image_1.png"></GridImage>
-            </ImageGridOneByOne>
+            </ImageGridThreeByThree>
             <HeadingThree>Drawings and Forms</HeadingThree>
             <ImageGridTwoByTwo>
               <GridImage src="/drawings_and_forms_image_1.png"></GridImage>
               <GridImage src="/drawings_and_forms_image_2.png"></GridImage>
             </ImageGridTwoByTwo>
+            <HeadingThree>From 2D to 3D</HeadingThree>
+            <Paragraph>{from_2d_to_3d_text_1}</Paragraph>
             <ImageGridOneByOne>
-              <GridImage src="/drawings_and_forms_image_3.png"></GridImage>
+              <GridImage src="/from-2d-to-3d-image-1-upscale.png"></GridImage>
             </ImageGridOneByOne>
-            <ImageTextCard imagePos='down' imgSrc='/from_2d_to_3d_image_5.jpg' text={from_2d_to_3d_text_1} title='From 2D to 3D - Lines from the Palm of Your Hand'></ImageTextCard>
             <ImageGridTwoByTwo>
               <GridImage src="/from_2d_to_3d_image_1.jpg"></GridImage>
               <GridImage src="/from_2d_to_3d_image_2.jpg"></GridImage>
               <GridImage src="/from_2d_to_3d_image_3.jpg"></GridImage>
               <GridImage src="/from_2d_to_3d_image_4.jpg"></GridImage>
             </ImageGridTwoByTwo>
-            <ImageTextCard imagePos='up' imgSrc='/from_2d_to_3d_image_6.jpg' text={from_2d_to_3d_text_2} title=''></ImageTextCard>
+            <Paragraph>{from_2d_to_3d_text_2}</Paragraph>
             <ImageGridOneByOne>
               <GridImage src="/from_2d_to_3d_image_7.jpg"></GridImage>
             </ImageGridOneByOne>
 
-            <HeadingThree>GÍOMETRIA</HeadingThree>
-            <Paragraph>{giometria_text}</Paragraph>
+
 
           </Section>
 
-          <Section id="art-and-technology">
-            <Heading>Art and Technology</Heading>
-            <HeadingThree>My First Laser Project</HeadingThree>
-            <ImageGridOneByOne>
-              <GridImage src="/my_first_laser_project_image_1.jpg"></GridImage>
-            </ImageGridOneByOne>
-            <HeadingThree>RGB Photos</HeadingThree>
-            <ImageGridOneByOne>
-              <GridImage src="/rgb_photos_image_2.jpg"></GridImage>
-            </ImageGridOneByOne>
-            <ImageGridTwoByTwo>
-              <GridImage src="/rgb_photos_image_3.jpg"></GridImage>
-              <GridImage src="/rgb_photos_image_4.jpg"></GridImage>
-            </ImageGridTwoByTwo>
-            <ImageGridOneByOne>
-              <GridImage src="/rgb_photos_image_1.jpg"></GridImage>
-            </ImageGridOneByOne>
-            <HeadingThree>Final Project with Changes</HeadingThree>
-            <ImageGridOneByOne>
-              <GridImage src="/final_project_with_changes_image_3.jpg"></GridImage>
-            </ImageGridOneByOne>
-            <ImageGridTwoByTwo>
-              <GridImage src="/final_project_with_changes_image_1.jpg"></GridImage>
-              <GridImage src="/final_project_with_changes_image_2.jpg"></GridImage>
-              <GridImage src="/final_project_with_changes_image_5.jpg"></GridImage>
-              <GridImage src="/final_project_with_changes_image_6.jpg"></GridImage>
-            </ImageGridTwoByTwo>
-            <ImageGridOneByOne>
-              <GridImage src="/final_project_with_changes_image_4.jpg"></GridImage>
-            </ImageGridOneByOne>
-          </Section>
+
 
           <Section id="traditional-and-digital-artworks">
             <Heading>Traditional and Digital Artworks</Heading>
@@ -221,6 +231,20 @@ I think views are very important when you enter buildings or spaces, whether the
             </ImageGridTwoByTwo>
 
             <HeadingThree>Video Links</HeadingThree>
+            <GlobalStyle />
+            <div style={{ margin: 'auto', maxWidth: '1080px', width: '100%' }}>
+              <iframe
+                src="https://player.vimeo.com/video/32361863?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                width="1080"
+                height="1080"
+                allow="autoplay; fullscreen; picture-in-picture"
+                frameBorder={0}
+                allowFullScreen
+                style={{ maxWidth: '100%', width: '100%', height: 'auto' }}
+              ></iframe>
+            </div>
+
+
 
           </Section>
 
@@ -233,9 +257,9 @@ I think views are very important when you enter buildings or spaces, whether the
 
 const Section = styled.section`
   padding: 20px;
-  margin-top: 60px; // Adjust based on the height of your FixedNavigation to avoid overlap
   background-color: var(--tile-start-rgb); // Ensure your globals.css is imported in your _app.tsx
-`;
+
+  `;
 
 export const Title = styled.h1`
   color: #333;
@@ -248,7 +272,7 @@ export const ImageGridThreeByThree = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  max-width: 500px;
+  max-width: 60%;
   margin: 2rem auto;
 `;
 
@@ -257,7 +281,7 @@ export const ImageGridTwoByTwo = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  max-width: 500px;
+  max-width: 60%;
   margin: 2rem auto;
 `;
 
@@ -265,7 +289,7 @@ export const ImageGridOneByOne = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
-  max-width: 500px;
+  max-width: 60%;
   margin: 2rem auto;
 `;
 
@@ -279,8 +303,11 @@ export const GridImage = styled.img`
 
 export const HeadingThree = styled.h3`
   color: #333;
-  text-align: center;
-  margin-bottom: 1rem;
+  text-align: left;
+  margin-left: 2rem;
+  max-width: 70%;
+  margin: 1rem auto;
+  font-style: italic;
 `;
 
 export const Paragraph = styled.p`
@@ -288,13 +315,31 @@ export const Paragraph = styled.p`
   font-size: 1rem;
   line-height: 1.5;
   margin: 1rem auto;
-  max-width: 800px; // Adjust the width as necessary
+  max-width: 70%; // Adjust the width as necessary
   text-align: justify;
 `;
 
 
 export const Heading = styled.h2`
     color: #333;
-    text-align: center;
-    margin-bottom: 1rem;
+    text-align: left;
+    max-width: 75%;
+    margin: 0.5rem auto;
+`;
+
+export const VideoContainer = styled.div`
+
+  position: relative;
+  padding-top: 25px;
+  height: 0;
+  margin: 0.5rem auto;
+`;
+
+export const Iframe = styled.iframe`
+    margin-top: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 `;

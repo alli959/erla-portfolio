@@ -24,6 +24,14 @@ const theme = {
     header: "60px", // Header height
     footer: "60px", // Footer height
   },
+  paragraph: {
+    color: "#555",
+    fontSize: "1rem",
+    lineHeight: "1.5",
+    margin: "1rem auto",
+    maxWidth: "80%",
+    textAlign: "justify",
+  },
 };
 
 export type ThemeType = typeof theme;

@@ -74,10 +74,10 @@ const FixedNavigation = () => {
   return (
     <Nav $top={topPosition}>
       <NavList>
+        <NavItem><Link href="#art-and-technology" passHref><NavLink>Art & Technology</NavLink></Link></NavItem>
         <NavItem><Link href="#personal-and-conceptual" passHref><NavLink>Personal & Conceptual</NavLink></Link></NavItem>
         <NavItem><Link href="#upcycling-and-sustainability" passHref><NavLink>Upcycling & Sustainability</NavLink></Link></NavItem>
-        <NavItem><Link href="#spatial-and-dimensional" passHref><NavLink>Spatial & Dimensional</NavLink></Link></NavItem>
-        <NavItem><Link href="#art-and-technology" passHref><NavLink>Art & Technology</NavLink></Link></NavItem>
+        <NavItem><Link href="#my-first-teledimensional-projects" passHref><NavLink>My First Teledimensional Projects</NavLink></Link></NavItem>
         <NavItem><Link href="#traditional-and-digital-artworks" passHref><NavLink>Traditional & Digital Artworks</NavLink></Link></NavItem>
         <NavItem><Link href="#personal-achievements-and-media" passHref><NavLink>Personal Achievements & Media</NavLink></Link></NavItem>
       </NavList>

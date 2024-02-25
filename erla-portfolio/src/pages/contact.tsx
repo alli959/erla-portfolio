@@ -10,6 +10,7 @@ export default function Contact() {
                 title="Get in Touch"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque."
                 imgSrc="/path-to-contact-image.jpg" // Replace with the path to your image
+                imagePos="down"
             />
             {/* You can add a contact form or other content here */}
         </Layout>

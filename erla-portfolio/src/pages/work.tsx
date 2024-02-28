@@ -44,8 +44,10 @@ Beautiful art can be something that draws your eye right away or that evokes mem
   return (
     <>
       <Layout>
+        <FixedNavigationContainer>
 
-        <FixedNavigation />
+          <FixedNavigation />
+        </FixedNavigationContainer>
         <main>
           <Section id="art-and-technology">
             <Heading>Art and Technology</Heading>
@@ -249,6 +251,20 @@ Beautiful art can be something that draws your eye right away or that evokes mem
   )
 }
 
+const FixedNavigationContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--fixedNavigation);
+  z-index: 1000;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+  
+`;
+
 const Section = styled.section`
   padding: 20px;
   background-color: var(--tile-start-rgb); // Ensure your globals.css is imported in your _app.tsx
@@ -268,6 +284,11 @@ export const ImageGridColThree = styled.div`
   gap: 1rem;
   max-width: 60%;
   margin: 2rem auto;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(, 1fr);
+    max-width: 80%;
+  }
 `;
 
 // Grid for 4 images (2x2)
@@ -277,6 +298,11 @@ export const ImageGridColTwo = styled.div`
   gap: 1rem;
   max-width: 60%;
   margin: 2rem auto;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 80%;
+  }
 `;
 
 export const ImageGridColOne = styled.div`
@@ -285,6 +311,11 @@ export const ImageGridColOne = styled.div`
   gap: 1rem;
   max-width: 60%;
   margin: 2rem auto;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 80%;
+  }
 `;
 
 // Image grid for 1 image in the center where left side is empty and right side is empty with half the space of the center picture
@@ -298,6 +329,11 @@ export const ImageGridColHalfOneHalf = styled.div`
   img:nth-child(1) {
     grid-column: 2 / 3;
   }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    max-width: 80%;
+  }
 `;
 
 export const ImageGridColQuarterThreeQuartersThreeQuartersQuarter = styled.div`
@@ -308,6 +344,11 @@ export const ImageGridColQuarterThreeQuartersThreeQuartersQuarter = styled.div`
   margin: 2rem auto;
   img:nth-child(1) {
     grid-column: 2 / 3;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    max-width: 80%;
   }
 `;
 
@@ -326,6 +367,12 @@ export const HeadingThree = styled.h3`
   max-width: 70%;
   margin: 1rem auto;
   font-style: italic;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    max-width: 80%;
+    text-align: center;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -335,16 +382,25 @@ export const Paragraph = styled.p`
   margin: 1rem auto;
   max-width: 70%; // Adjust the width as necessary
   text-align: justify;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    max-width: 80%;
+  }
 `;
 
 
 export const Heading = styled.h2`
-    color: #333;
-    text-align: left;
-    max-width: 75%;
-    margin: 0.5rem auto;
-`;
+  color: #333;
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 2rem;
 
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    max-width: 80%;
+  }
+`;
 export const VideoContainer = styled.div`
 
   position: relative;

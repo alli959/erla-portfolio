@@ -33,6 +33,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <link href="https://db.onlinewebfonts.com/c/63cd01970b60f091823bdd24bedb11d3?family=Mixolydian+W05+Book" rel="stylesheet" />
         </Head>
         <body>

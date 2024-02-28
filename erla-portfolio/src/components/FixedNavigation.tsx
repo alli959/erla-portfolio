@@ -47,7 +47,6 @@ const NavLink = styled.div`
     background: transparent;
     transition: background-color 0.3s;
       text-decoration: none !important; // Force no text decoration
-
   }
 
   &:hover::after {

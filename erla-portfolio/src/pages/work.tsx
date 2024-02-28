@@ -52,50 +52,47 @@ Beautiful art can be something that draws your eye right away or that evokes mem
             <HeadingThree>GÍOMETRIA</HeadingThree>
             <Paragraph>{giometria_text}</Paragraph>
             <HeadingThree>RGB Photos</HeadingThree>
-            <ImageGridTwoByTwo>
+            <ImageGridColHalfOneHalf>
               <GridImage src="/rgb_photos_image_2.jpg"></GridImage>
-            </ImageGridTwoByTwo>
-            <ImageGridThreeByThree>
+            </ImageGridColHalfOneHalf>
+            <ImageGridColThree>
               <GridImage src="/rgb_photos_image_3.jpg"></GridImage>
               <GridImage src="/rgb_photos_image_4.jpg"></GridImage>
               <GridImage src="/rgb_photos_image_1.jpg"></GridImage>
-            </ImageGridThreeByThree>
+            </ImageGridColThree>
             <HeadingThree>My First Laser Project</HeadingThree>
-            <ImageGridTwoByTwo>
+            <ImageGridColHalfOneHalf>
               <GridImage src="/my_first_laser_project_image_1.jpg"></GridImage>
-            </ImageGridTwoByTwo>
+            </ImageGridColHalfOneHalf>
             <HeadingThree>Final Project with Changes</HeadingThree>
-            <ImageGridThreeByThree>
+            <ImageGridColThree>
               <GridImage src="/final_project_with_changes_image_4.jpg"></GridImage>
               <GridImage src="/final_project_with_changes_image_3.jpg"></GridImage>
-              <GridImage></GridImage>
               <GridImage src="/final_project_with_changes_image_1.jpg"></GridImage>
               <GridImage src="/final_project_with_changes_image_2.jpg"></GridImage>
-              <GridImage></GridImage>
               <GridImage src="/final_project_with_changes_image_5.jpg"></GridImage>
               <GridImage src="/final_project_with_changes_image_6.jpg"></GridImage>
-              <GridImage></GridImage>
-            </ImageGridThreeByThree>
+            </ImageGridColThree>
           </Section>
           <Section id="personal-and-conceptual">
             <Heading>Personal and Conceptual Projects</Heading>
             <HeadingThree>Personal Project - Standing Up on My Own Two Feet</HeadingThree>
             <Paragraph>{personal_project_text}</Paragraph>
-            <ImageGridOneByOne>
+            <ImageGridColOne>
               <GridImage src="/personal_project_img_1.jpg"></GridImage>
-            </ImageGridOneByOne>
+            </ImageGridColOne>
             <HeadingThree>Beautiful and ugly art - Project with paper, making it ugly and beautiful</HeadingThree>
             <Paragraph>{beautiful_and_ugly_art_text}</Paragraph>
-            <ImageGridTwoByTwo>
+            <ImageGridColTwo>
               <GridImage src="/beautiful_and_ugly_art_img_1.jpg" alt="Picture 2" />
               <GridImage src="/beautiful_and_ugly_art_img_2.jpg" alt="Picture 3" />
-            </ImageGridTwoByTwo>
+            </ImageGridColTwo>
             <HeadingThree>An Old Thing Gets a New Life</HeadingThree>
             <Paragraph>{an_old_thing_gets_a_new_life_text}</Paragraph>
-            <ImageGridTwoByTwo>
+            <ImageGridColTwo>
               <GridImage src="/an_old_thing_gets_a_new_life_img_1.jpg"></GridImage>
               <GridImage src="/an_old_thing_gets_a_new_life_img_2.png"></GridImage>
-            </ImageGridTwoByTwo>
+            </ImageGridColTwo>
 
 
           </Section>
@@ -104,64 +101,61 @@ Beautiful art can be something that draws your eye right away or that evokes mem
             <Heading>Upcycling and Sustainability</Heading>
             <HeadingThree>Upcycling Jeans to a Bag</HeadingThree>
             <Paragraph>{upcycling_jeans_to_a_bag_text}</Paragraph>
-            <ImageGridTwoByTwo>
+            <ImageGridColHalfOneHalf>
               <GridImage src="/upcycling_jeans_to_a_bag_image_5.jpg"></GridImage>
-            </ImageGridTwoByTwo>
-            <ImageGridThreeByThree>
+            </ImageGridColHalfOneHalf>
+            <ImageGridColThree>
               <GridImage src="/upcycling_jeans_to_a_bag_image_1.jpg"></GridImage>
               <GridImage src="/upcycling_jeans_to_a_bag_image_2.jpg"></GridImage>
               <GridImage src="/upcycling_jeans_to_a_bag_image_3.jpg"></GridImage>
               <GridImage src="/upcycling_jeans_to_a_bag_image_4.jpg"></GridImage>
-            </ImageGridThreeByThree>
+            </ImageGridColThree>
             <HeadingThree>Handbag Knitted Out of Old Thrifted Jeans</HeadingThree>
-            <ImageGridTwoByTwo>
+            <ImageGridColTwo>
               <GridImage src="/handbag_knitted_out_of_old_thirfted_jeans_image_1.jpg"></GridImage>
               <GridImage src="/handbag_knitted_out_of_old_thirfted_jeans_image_2.jpg"></GridImage>
-            </ImageGridTwoByTwo>
+            </ImageGridColTwo>
             <HeadingThree>My 23rd Birthday Outfit from Old Jeans and Thrifted Dress</HeadingThree>
-            <ImageGridTwoByTwo>
+            <ImageGridColTwo>
               <GridImage src="/my_23_birthday_outfit_image_1.jpg"></GridImage>
               <GridImage src="/my_23_birthday_outfit_image_2.jpg"></GridImage>
-            </ImageGridTwoByTwo>
+            </ImageGridColTwo>
           </Section>
 
           <Section id="my-first-teledimensional-projects">
             <Heading>My First Teledimensional Projects</Heading>
             <HeadingThree>The Honey Chair</HeadingThree>
-            <ImageGridThreeByThree>
-              <GridImage></GridImage>
+            <ImageGridColHalfOneHalf>
               <GridImage src="/the_honey_chair_image_1.png"></GridImage>
-            </ImageGridThreeByThree>
+            </ImageGridColHalfOneHalf>
             <HeadingThree>My Bedroom Drawing</HeadingThree>
-            <ImageGridThreeByThree>
-              <GridImage></GridImage>
+            <ImageGridColHalfOneHalf>
               <GridImage src="/my_bedroom_drawing_image_1.png"></GridImage>
-            </ImageGridThreeByThree>
+            </ImageGridColHalfOneHalf>
             <HeadingThree>My School Hall</HeadingThree>
-            <ImageGridThreeByThree>
-              <GridImage></GridImage>
+            <ImageGridColHalfOneHalf>
               <GridImage src="/my_school_hall_image_1.png"></GridImage>
-            </ImageGridThreeByThree>
+            </ImageGridColHalfOneHalf>
             <HeadingThree>Drawings and Forms</HeadingThree>
-            <ImageGridTwoByTwo>
+            <ImageGridColTwo>
               <GridImage src="/drawings_and_forms_image_1.png"></GridImage>
               <GridImage src="/drawings_and_forms_image_2.png"></GridImage>
-            </ImageGridTwoByTwo>
+            </ImageGridColTwo>
             <HeadingThree>From 2D to 3D</HeadingThree>
             <Paragraph>{from_2d_to_3d_text_1}</Paragraph>
-            <ImageGridOneByOne>
+            <ImageGridColOne>
               <GridImage src="/from-2d-to-3d-image-1-upscale.png"></GridImage>
-            </ImageGridOneByOne>
-            <ImageGridTwoByTwo>
+            </ImageGridColOne>
+            <ImageGridColTwo>
               <GridImage src="/from_2d_to_3d_image_1.jpg"></GridImage>
               <GridImage src="/from_2d_to_3d_image_2.jpg"></GridImage>
               <GridImage src="/from_2d_to_3d_image_3.jpg"></GridImage>
               <GridImage src="/from_2d_to_3d_image_4.jpg"></GridImage>
-            </ImageGridTwoByTwo>
+            </ImageGridColTwo>
             <Paragraph>{from_2d_to_3d_text_2}</Paragraph>
-            <ImageGridOneByOne>
+            <ImageGridColHalfOneHalf>
               <GridImage src="/from_2d_to_3d_image_7.jpg"></GridImage>
-            </ImageGridOneByOne>
+            </ImageGridColHalfOneHalf>
 
 
 
@@ -172,63 +166,63 @@ Beautiful art can be something that draws your eye right away or that evokes mem
           <Section id="traditional-and-digital-artworks">
             <Heading>Traditional and Digital Artworks</Heading>
             <HeadingThree>My First Painting</HeadingThree>
-            <ImageGridOneByOne>
+            <ImageGridColOne>
               <GridImage src="/my_first_painting_image_1.png"></GridImage>
-            </ImageGridOneByOne>
+            </ImageGridColOne>
             <HeadingThree>Dress Colors</HeadingThree>
-            <ImageGridOneByOne>
+            <ImageGridColOne>
               <GridImage src="/dress_colors_image_1.png"></GridImage>
-            </ImageGridOneByOne>
+            </ImageGridColOne>
             <HeadingThree>Machines into Figures Sketches</HeadingThree>
-            <ImageGridTwoByTwo>
+            <ImageGridColTwo>
               <GridImage src="/machines_into_figures_sketches_image_1.jpg"></GridImage>
               <GridImage src="/machines_into_figures_sketches_image_2.jpg"></GridImage>
-            </ImageGridTwoByTwo>
+            </ImageGridColTwo>
             <HeadingThree>Negative Space</HeadingThree>
-            <ImageGridOneByOne>
+            <ImageGridColOne>
               <GridImage src="/negative_space_image_1.png"></GridImage>
-            </ImageGridOneByOne>
+            </ImageGridColOne>
             <HeadingThree>Blind Sketches</HeadingThree>
-            <ImageGridOneByOne>
+            <ImageGridColOne>
               <GridImage src="/blind_sketches_image_1.jpg"></GridImage>
-            </ImageGridOneByOne>
+            </ImageGridColOne>
             <HeadingThree>Playing with Lines and Forms</HeadingThree>
-            <ImageGridOneByOne>
+            <ImageGridColOne>
               <GridImage src="/playing_with_lines_and_forms_image_1.jpg"></GridImage>
-            </ImageGridOneByOne>
+            </ImageGridColOne>
             <HeadingThree>Figure Drawings</HeadingThree>
-            <ImageGridOneByOne>
+            <ImageGridColOne>
               <GridImage src="/figure_drawings_image_1.png"></GridImage>
-            </ImageGridOneByOne>
-            <ImageGridTwoByTwo>
+            </ImageGridColOne>
+            <ImageGridColTwo>
               <GridImage src="/figure_drawings_image_3.jpg"></GridImage>
               <GridImage src="/figure_drawings_image_4.jpg"></GridImage>
               <GridImage src="/figure_drawings_image_2.jpg"></GridImage>
               <GridImage src="/figure_drawings_image_5.jpg"></GridImage>
-            </ImageGridTwoByTwo>
+            </ImageGridColTwo>
             <HeadingThree>Face Drawings</HeadingThree>
-            <ImageGridTwoByTwo>
+            <ImageGridColTwo>
               <GridImage src="/face_drawings_image_2.jpg"></GridImage>
               <GridImage src="/face_drawings_image_3.jpg"></GridImage>
               <GridImage src="/face_drawings_image_1.jpg"></GridImage>
               <GridImage src="/face_drawings_image_4.jpg"></GridImage>
-            </ImageGridTwoByTwo>
+            </ImageGridColTwo>
             <HeadingThree>Other Drawings and Projects</HeadingThree>
-            <ImageGridTwoByTwo>
+            <ImageGridColTwo>
               <GridImage src="/other_drawings_and_projects_image_2.jpg"></GridImage>
               <GridImage src="/other_drawings_and_projects_image_3.jpg"></GridImage>
               <GridImage src="/other_drawings_and_projects_image_1.jpg"></GridImage>
               <GridImage src="/other_drawings_and_projects_image_4.jpg"></GridImage>
-            </ImageGridTwoByTwo>
+            </ImageGridColTwo>
           </Section>
 
           <Section id="personal-achievements-and-media">
             <Heading>Personal Achievements and Media</Heading>
             <HeadingThree>Me in the Newspaper 10-Year-Old for Knitting Cozy Shoes</HeadingThree>
-            <ImageGridTwoByTwo>
+            <ImageGridColTwo>
               <GridImage src="/me_in_the_newspaper_image_1.jpg"></GridImage>
               <GridImage src="/me_in_the_newspaper_image_2.jpg"></GridImage>
-            </ImageGridTwoByTwo>
+            </ImageGridColTwo>
 
             <HeadingThree>Video Links</HeadingThree>
             <GlobalStyle />
@@ -268,7 +262,7 @@ export const Title = styled.h1`
 
 
 // Grid for 6 images (3x3)
-export const ImageGridThreeByThree = styled.div`
+export const ImageGridColThree = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -277,7 +271,7 @@ export const ImageGridThreeByThree = styled.div`
 `;
 
 // Grid for 4 images (2x2)
-export const ImageGridTwoByTwo = styled.div`
+export const ImageGridColTwo = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
@@ -285,7 +279,7 @@ export const ImageGridTwoByTwo = styled.div`
   margin: 2rem auto;
 `;
 
-export const ImageGridOneByOne = styled.div`
+export const ImageGridColOne = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
@@ -293,10 +287,34 @@ export const ImageGridOneByOne = styled.div`
   margin: 2rem auto;
 `;
 
+// Image grid for 1 image in the center where left side is empty and right side is empty with half the space of the center picture
+// so 0.5(empty space) 1(WHAT THE IMAGE TAKES) 0.5(empty space)
+export const ImageGridColHalfOneHalf = styled.div`
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  gap: 1rem;
+  max-width: 60%;
+  margin: 2rem auto;
+  img:nth-child(1) {
+    grid-column: 2 / 3;
+  }
+`;
+
+export const ImageGridColQuarterThreeQuartersThreeQuartersQuarter = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  gap: 1rem;
+  max-width: 60%;
+  margin: 2rem auto;
+  img:nth-child(1) {
+    grid-column: 2 / 3;
+  }
+`;
+
 // Image component for grids
 export const GridImage = styled.img`
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   border-radius: 8px;
 `;
